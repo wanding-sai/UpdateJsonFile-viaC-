@@ -1,0 +1,38 @@
+{
+  "id": "test",
+  "name": "test",
+  "type": "test",
+  "properties": {
+    "policy": {
+      "rules": [
+        {
+          "enabled": true,
+          "name": "test",
+          "type": "test",
+          "definition": {
+            "filters": {
+              "bTypes": "test",
+              "prefixMatch": [
+                "test11",
+                "test22"
+              ]
+            },
+            "actions": {
+              "base": {
+                "create": {
+                  "days": 30
+                },
+                "update": {
+                  "days": 90
+                },
+                "delete": {
+                  "days": 1000
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
